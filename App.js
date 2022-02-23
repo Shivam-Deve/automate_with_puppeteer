@@ -4,7 +4,7 @@ const automate = async function() {
     const browser = await puppet.launch({
       headless: false,
       slowMo: true,
-      defaultViewport: null
+      defaultViewport: null,args=["--start-maximized"]
     });
     const pages = await browser.pages();
     const page = pages[0];

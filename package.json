@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^13.3.2"
+    "pdfkit": "^0.13.0",
+    "puppeteer": "^13.3.2",
+    "xlsx": "^0.18.2"
   }
 }
