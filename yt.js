@@ -5,7 +5,7 @@ const fs = require("fs");
 (async () => {
   try {
     const browser = await puppet.launch({
-      // headless: false,
+      headless: false,
       defaultViewport: null,
       args: ["--start-maximized"]
     });

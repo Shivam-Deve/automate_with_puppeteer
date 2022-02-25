@@ -1,10 +1,11 @@
 let puppet = require("puppeteer");
-const automate = async function() {
+(async function () {
   try {
     const browser = await puppet.launch({
       headless: false,
       slowMo: true,
-      defaultViewport: null,args=["--start-maximized"]
+      defaultViewport: null,
+      args: ["--start-maximized"]
     });
     const pages = await browser.pages();
     const page = pages[0];
@@ -19,5 +20,5 @@ const automate = async function() {
   } catch (err) {
     console.log("error=> ", err);
   }
-};
-automate();
+})()
+
